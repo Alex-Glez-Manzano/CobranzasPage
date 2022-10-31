@@ -1,0 +1,5 @@
+https://localhost:44379/api/pago
+https://localhost:44379/api/banco
+https://localhost:44379/api/alumno
+
+C:\Users\Alejandro-Desarrollo\source\repos\apiGestores
