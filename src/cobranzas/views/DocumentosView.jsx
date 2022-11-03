@@ -69,7 +69,7 @@ return (
         ml: {sm: `${drawerWidth}px`}
       }}
   >
-      <Toolbar>
+      {/* <Toolbar>
           <IconButton
             color='inherit'
             edge="start"
@@ -83,7 +83,7 @@ return (
               <LogoutOutlined/>
             </IconButton>
           </Grid>
-      </Toolbar>
+      </Toolbar> */}
     </AppBar>
     {/* cuerpo  */}
     <Grid container direction="column" sx={{ backgroundColor:'white', borderRadius: 3, minHeight:'550px'}}>

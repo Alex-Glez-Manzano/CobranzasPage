@@ -68,7 +68,7 @@ const Search = styled('div')(({ theme }) => ({
           ml: {sm: `${drawerWidth}px`}
         }}
     >
-        <Toolbar>
+        {/* <Toolbar>
             <IconButton
               color='inherit'
               edge="start"
@@ -82,7 +82,7 @@ const Search = styled('div')(({ theme }) => ({
                 <LogoutOutlined/>
               </IconButton>
             </Grid>
-        </Toolbar>
+        </Toolbar> */}
       </AppBar>
       {/* cuerpo  */}
       <Grid container direction="column" sx={{ backgroundColor:'white', borderRadius: 3, minHeight:'550px'}}>

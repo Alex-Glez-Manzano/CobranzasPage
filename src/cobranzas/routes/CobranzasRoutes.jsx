@@ -7,7 +7,7 @@ export const CobranzasRoutes = () => {
     <Routes>
         <Route path="/" element={<CobranzasPage/>}/>
 
-        <Route path="/*" element={<Navigate to="/"/>}/>
+        {/* <Route path="/*" element={<Navigate to="*"/>}/> */}
     </Routes>
   )
 }

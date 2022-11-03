@@ -8,7 +8,7 @@ import InputBase from '@mui/material/InputBase';
 import { SideBar } from "../components";
 const optionEstatus = ['','Activo', 'Inactivo'];
 const optionColegio = ['','Regina - 1', 'Regina - 2'];
-const drawerWidth = 180;
+const drawerWidth = 250;
 export const AlumnosView = () => {
   // optionEstatus
     const [value, setValue] = useState(optionEstatus[0]);
@@ -69,7 +69,7 @@ const Search = styled('div')(({ theme }) => ({
           ml: {sm: `${drawerWidth}px`}
         }}
     >
-        <Toolbar>
+        {/* <Toolbar>
             <IconButton
               color='inherit'
               edge="start"
@@ -83,7 +83,7 @@ const Search = styled('div')(({ theme }) => ({
                 <LogoutOutlined/>
               </IconButton>
             </Grid>
-        </Toolbar>
+        </Toolbar> */}
       </AppBar>
       {/* cuerpo  */}
       <Grid container direction="column" sx={{ backgroundColor:'white', borderRadius: 3, minHeight:'550px'}}>

@@ -25,7 +25,7 @@ export const ReferenciasView = () => {
   
   return (
     
-    <Grid container >
+    <Grid container  className="referencias">
       {/* Titulo  */}
       <AppBar
         position='fixed'
@@ -34,7 +34,7 @@ export const ReferenciasView = () => {
           ml: {sm: `${drawerWidth}px`}
         }}
     >
-        <Toolbar>
+        {/* <Toolbar>
             <IconButton
               color='inherit'
               edge="start"
@@ -48,7 +48,7 @@ export const ReferenciasView = () => {
                 <LogoutOutlined/>
               </IconButton>
             </Grid>
-        </Toolbar>
+        </Toolbar> */}
       </AppBar>
       {/* cuerpo  */}
       <Grid container direction="column"

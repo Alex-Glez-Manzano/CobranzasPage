@@ -1,4 +1,3 @@
-export * from './NothingSelectedView';
 export * from './AlumnosView';
 export * from './CobranzasView';
 export * from './DocumentosView';

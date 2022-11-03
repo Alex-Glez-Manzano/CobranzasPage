@@ -4,10 +4,11 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import AlignHorizontalLeftIcon from '@mui/icons-material/AlignHorizontalLeft';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import FaceIcon from '@mui/icons-material/Face';
-import { NothingSelectedView, AlumnosView,CobranzasView,DocumentosView,PortalView,ReferenciasView } from "../views";
-import { Link, Route } from "react-router-dom";
+import { AlumnosView,CobranzasView,DocumentosView,PortalView,ReferenciasView } from "../views";
+import { Link, NavLink, Route, Routes, useNavigate } from "react-router-dom";
 
 export const SideBar = ({drawerWidth=180}) => {
+    const navigate= useNavigate();
   return (
         <Box
         component='nav'
@@ -34,7 +35,7 @@ export const SideBar = ({drawerWidth=180}) => {
             <Grid container>
             <List sx={{width:{sm: 185}, flexShrink:{sm:0}, color:'white', height:'450px'}}>
                 <ListItem>
-                    <ListItemButton>
+                    <ListItemButton element={Link} to='/referencias'>
                         <Grid container>
                             <DashboardIcon sx={{color:'white'}}/>&nbsp;
                             <ListItemText primary={'Referencias'}>
@@ -49,7 +50,8 @@ export const SideBar = ({drawerWidth=180}) => {
                             <ListItemText primary={'Documentos'}/>
                         </Grid>
                     </ListItemButton>
-                </ListItem><ListItem>
+                </ListItem>
+                <ListItem>
                     <ListItemButton>
                         <Grid container>
                             <FilterAltIcon sx={{color:'white'}}/>&nbsp;
